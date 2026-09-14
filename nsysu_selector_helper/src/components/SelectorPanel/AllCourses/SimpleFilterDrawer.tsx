@@ -548,7 +548,7 @@ const SimpleFilterDrawer: React.FC = () => {
           if (!rowState) return null;
           const fieldOpts = getFieldOptionsByField(fieldDef.field);
           const fieldLabel = t(
-            `simpleFilter.fields.${fieldDef.labelKey}` as any,
+            `simpleFilter.fields.${fieldDef.labelKey}` as TranslationKey,
           );
 
           return (

@@ -313,7 +313,10 @@ const uiSlice = createSlice({
         selectedCompulsoryTypes: [],
       };
     },
-    setDepartmentCourses: (state, action: PayloadAction<any>) => {
+    setDepartmentCourses: (
+      state,
+      action: PayloadAction<UIState['departmentCourses']>,
+    ) => {
       state.departmentCourses = action.payload;
     },
   },
